@@ -6,7 +6,7 @@ Please feel free to do whatever you want with these mixins and if you have any o
 
 #Usage
 
-Using the mixins is a piece of cake and if you don't already know how to use them you can find out [here](http://lesscss.org/#-mixins) on the LessCSS website.
+Using the mixins is a piece of cake and if you don't already know how to use them you can find out <a href="http://lesscss.org/#-mixin" target="_blank">here</a> on the LessCSS website.
 
 If you have any questions or any issues with any of the mixins here, let me know.
 
