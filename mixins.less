@@ -1,0 +1,59 @@
+/* Border Radius */
+.borderRadius(@radius){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/* Box Shadow */
+.boxShadow(@x, @y, @blur, @spread, @color){
+  -webkit-box-shadow: @x @y @blur @spread @color;
+  -moz-box-shadow: @x @y @blur @spread @color;
+  -o-box-shadow: @x @y @blur @spread @color;
+  -ms-box-shadow: @x @y @blur @spread @color;
+  box-shadow: @x @y @blur @spread @color;
+}
+
+/* Gradient (Left to Right) */
+.gradientLeftRight(@from, @to){
+  background: @from;
+  background: -moz-linear-gradient(left,  @from 0%, @to 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, @from), color-stop(100%, @to));
+  background: -webkit-linear-gradient(left,  @from 0%, @to 100%);
+  background: -o-linear-gradient(left, @from 0%, @to 100%);
+  background: -ms-linear-gradient(left, @from 0%, @to 100%);
+  background: linear-gradient(to right, @from 0%, @to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{from}', endColorstr='@{to}', GradientType=1);
+}
+
+/* Gradient (Top to Bottom) */
+.gradientTopBottom(@from, @to){
+  background: @from;
+  background: -moz-linear-gradient(top,  @from 0%, @to 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from), color-stop(100%,@to));
+  background: -webkit-linear-gradient(top,  @from 0%,@to 100%);
+  background: -o-linear-gradient(top,  @from 0%,@to 100%);
+  background: -ms-linear-gradient(top,  @from 0%,@to 100%);
+  background: linear-gradient(to bottom,  @from 0%,@to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{from}', endColorstr='@{to}',GradientType=0);
+}
+
+/* Text Shadow */
+.textShadow(@x, @y, @blur, @color){
+  -webkit-text-shadow: @x @y @blur @color;
+  -moz-text-shadow: @x @y @blur @color;
+  -o-text-shadow: @x @y @blur @color;
+  -ms-text-shadow: @x @y @blur @color;
+  text-shadow: @x @y @blur @color;
+}
+
+/* Transition - Can only be used to assign a single transition, not multiple */
+.transition(@property, @duration:1.0s, @effect:ease, @delay:0s){
+  -webkit-transition: @property @duration @effect @delay;
+  -moz-transition: @property @duration @effect @delay;
+  -o-transition: @property @duration @effect @delay;
+  -ms-transition: @property @duration @effect @delay;
+  transition: @property @duration @effect @delay;
+}
