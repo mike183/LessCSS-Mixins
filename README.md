@@ -1,13 +1,24 @@
 #LessCSS Mixins
 
-This is a collection of simple LessCSS Mixins designed so that you no longer have to keep typing out the vendor prefixes for CSS3 properties. The collection has been built up from past projects I have worked on so I decided to put all of the mixins into this Github repo for everyone to use and/or modify as they please.
-
-Please feel free to do whatever you want with these mixins and if you have any of your own to add submit a pull request and I will add it to the collection ;)
+This is a collection of simple LessCSS Mixins that I have built up from past projects that I have worked on. These mixins have saved me loads of time since I started the list, allowing me to quickly implement common CSS3 features without needing to worry about any of the various vendor prefixes.
 
 #Usage
 
-Using the mixins is a piece of cake and if you don't already know how to use them you can find out <a href="http://lesscss.org/#-mixin" target="_blank">here</a> on the LessCSS website.
+Using the mixins is a piece of cake. If you don't know what mixins are or how to use them, you can find out more <a href="http://lesscss.org/features/#mixins-feature" target="_blank">here</a>.
 
-If you have any questions or any issues with any of the mixins here, let me know.
+The current list of mixins is as follows:
+
+- borderRadius
+- borderTopRadius
+- borderRightRadius
+- borderBottomRadius
+- borderLeftRadius
+- boxShadow
+- insetBoxShadow
+- gradientLeftRight
+- gradientTopBottom
+- placeholderColor
+- textShadow
+- transition
 
 Enjoy!
